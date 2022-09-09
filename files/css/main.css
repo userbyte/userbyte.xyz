@@ -1,0 +1,92 @@
+/* userbyte.xyz main.css */
+
+/* ub color palette:
+           bg:   #262626
+    dark gray:   #404040
+   light gray:   #808080
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+  font-family: 'Source Code Pro';
+  background-color: #262626; /* <-- fallback bg color */
+  background-image: url(../img/bg-1440p.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+}
+h2 {
+  font-weight: bold;
+  color: white;
+}
+
+.main-content-container {
+  position: fixed;
+  left: 50%;
+  top: 7%;
+  transform: translateX(-50%);
+}
+
+.profile-card-top {
+  /* background: transparent url("../img/banner-1280-384.png") repeat scroll center center; */
+  background-color: #404040; /* <-- fallback bg color */
+  background-size: cover;
+  background-image: url(../img/banner-1280-384.png);
+  width: 965px;
+  height: 250px;
+  padding: 12px;
+  border-color: #b4b4b4;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.profile-card-top p {
+  color: white;
+}
+.profile-card-top-text {
+  margin-left: 275px;
+  font-size: 20px;
+}
+
+.profile-card-top-image {
+  float:left;
+}
+.profile-card-top-image img {
+  width: 250px;
+  height: 250px;
+  border-color: #b4b4b4;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.profile-card-bottom {
+  /* background: url(../img/bg-1440p.png) no-repeat center center fixed; */
+  background-color: #262626;
+  border-color: #b4b4b4;
+  border-width: 1px;
+  border-style: solid;
+  border-top: none;
+  padding: 12px;
+  width: fit-content;
+  max-width: 966px;
+  font-size: 22px;
+}
+.profile-card-bottom i {
+  margin-left: 10px; 
+  margin-top: 18px; 
+  margin-bottom: 18px; 
+  color: #bfbfbf;
+}
+.profile-card-bottom a {
+  /* float: right; */
+  margin-left: 10px; 
+  color: #f6f6f6;
+}
