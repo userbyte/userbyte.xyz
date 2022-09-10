@@ -154,6 +154,16 @@ h2 {
 
 /* -- responsive styling [START] -- */
 
+@media only screen 
+and (max-width: 1920px) {
+  .profile-card-discordrpc {
+    width: 294px;
+  }
+  .profile-card-spotify {
+    max-width: none;
+    width: 293px;
+  }
+}
 /* any small-width screen */
 @media only screen 
 and (max-width: 1000px) {
@@ -175,6 +185,15 @@ and (max-width: 1000px) {
   .profile-card-bottom {
     width: 326px;
     padding: 9px;
+  }
+  .profile-card-discordrpc {
+    width: 320px;
+    height: fit-content;
+  }
+  .profile-card-spotify {
+    max-width: none;
+    width: 320px;
+    height: fit-content;
   }
 }
 
@@ -202,6 +221,15 @@ and (-webkit-device-pixel-ratio: 2) {
     width: 326px;
     padding: 9px;
   }
+  .profile-card-discordrpc {
+    width: 320px;
+    height: fit-content;
+  }
+  .profile-card-spotify {
+    max-width: none;
+    width: 320px;
+    height: fit-content;
+  }
 }
 /* 2436x1125px at 458ppi | iPhone XS */
 @media only screen 
@@ -226,6 +254,15 @@ and (-webkit-device-pixel-ratio: 3) {
   .profile-card-bottom {
     width: 326px;
     padding: 9px;
+  }
+  .profile-card-discordrpc {
+    width: 320px;
+    height: fit-content;
+  }
+  .profile-card-spotify {
+    max-width: none;
+    width: 320px;
+    height: fit-content;
   }
 }
 /* 2688x1242px at 458ppi | iPhone XS Max
@@ -253,6 +290,15 @@ and (-webkit-device-pixel-ratio: 3) {
     width: 326px;
     padding: 9px;
   }
+  .profile-card-discordrpc {
+    width: 320px;
+    height: fit-content;
+  }
+  .profile-card-spotify {
+    max-width: none;
+    width: 320px;
+    height: fit-content;
+  }
 }
 /* 2436x1125px at 458ppi | iPhone 11 Pro
  + 2340x1080 pixels at 476ppi | iPhone 12/13 Mini */
@@ -279,6 +325,15 @@ and (-webkit-device-pixel-ratio: 3) {
     width: 326px;
     padding: 9px;
   }
+  .profile-card-discordrpc {
+    width: 320px;
+    height: fit-content;
+  }
+  .profile-card-spotify {
+    max-width: none;
+    width: 320px;
+    height: fit-content;
+  }
 }
 /* 2532x1170 pixels at 460ppi | iPhone 13 Pro */
 @media only screen 
@@ -304,6 +359,15 @@ and (-webkit-device-pixel-ratio: 3) {
     width: 326px;
     padding: 9px;
   }
+  .profile-card-discordrpc {
+    width: 320px;
+    height: fit-content;
+  }
+  .profile-card-spotify {
+    max-width: none;
+    width: 320px;
+    height: fit-content;
+  }
 }
 /* 2778x1284 pixels at 458ppi | iPhone 13 Pro Max */
 @media only screen 
@@ -328,6 +392,15 @@ and (-webkit-device-pixel-ratio: 3) {
   .profile-card-bottom {
     width: 326px;
     padding: 9px;
+  }
+  .profile-card-discordrpc {
+    width: 320px;
+    height: fit-content;
+  }
+  .profile-card-spotify {
+    max-width: none;
+    width: 320px;
+    height: fit-content;
   }
 }
 
