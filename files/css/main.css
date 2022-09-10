@@ -190,6 +190,9 @@ and (max-width: 1000px) {
     width: 320px;
     height: fit-content;
   }
+  #lanyard-discord {
+    height: fit-content;
+  }
   .profile-card-spotify {
     max-width: none;
     width: 320px;
@@ -225,6 +228,9 @@ and (-webkit-device-pixel-ratio: 2) {
     width: 320px;
     height: fit-content;
   }
+  #lanyard-discord {
+    height: fit-content;
+  }
   .profile-card-spotify {
     max-width: none;
     width: 320px;
@@ -257,6 +263,9 @@ and (-webkit-device-pixel-ratio: 3) {
   }
   .profile-card-discordrpc {
     width: 320px;
+    height: fit-content;
+  }
+  #lanyard-discord {
     height: fit-content;
   }
   .profile-card-spotify {
@@ -294,6 +303,9 @@ and (-webkit-device-pixel-ratio: 3) {
     width: 320px;
     height: fit-content;
   }
+  #lanyard-discord {
+    height: fit-content;
+  }
   .profile-card-spotify {
     max-width: none;
     width: 320px;
@@ -327,6 +339,9 @@ and (-webkit-device-pixel-ratio: 3) {
   }
   .profile-card-discordrpc {
     width: 320px;
+    height: fit-content;
+  }
+  #lanyard-discord {
     height: fit-content;
   }
   .profile-card-spotify {
@@ -363,6 +378,9 @@ and (-webkit-device-pixel-ratio: 3) {
     width: 320px;
     height: fit-content;
   }
+  #lanyard-discord {
+    height: fit-content;
+  }
   .profile-card-spotify {
     max-width: none;
     width: 320px;
@@ -395,6 +413,9 @@ and (-webkit-device-pixel-ratio: 3) {
   }
   .profile-card-discordrpc {
     width: 320px;
+    height: fit-content;
+  }
+  #lanyard-discord {
     height: fit-content;
   }
   .profile-card-spotify {
