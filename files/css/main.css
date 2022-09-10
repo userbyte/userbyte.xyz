@@ -70,6 +70,7 @@ h2 {
 
 .profile-card-bottom {
   /* background: url(../img/bg-1440p.png) no-repeat center center fixed; */
+  float:left;
   background-color: #262626;
   border-color: #b4b4b4;
   border-width: 1px;
@@ -90,6 +91,65 @@ h2 {
   /* float: right; */
   margin-left: 10px; 
   color: #f6f6f6;
+}
+
+.profile-card-discordrpc {
+  float:left;
+  background-color: #262626;
+  border-color: #b4b4b4;
+  border-width: 1px;
+  border-style: solid;
+  border-top: none;
+  padding: 12px;
+  padding-top: 0px;
+  width: 294px;
+  height: 311px;
+  font-size: 22px;
+}
+
+#lanyard-discord {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.profile-card-discordrpc p {
+  color: white;
+}
+
+.profile-card-spotify {
+  float: left;
+  background-color: #262626;
+  border-color: #b4b4b4;
+  border-width: 1px;
+  border-style: solid;
+  border-top: none;
+  padding: 9px;
+  padding-top: 0px;
+  padding-right: 15px;
+  width: 294px;
+  height: 314px;
+  font-size: 16px;
+  color: white;
+  max-width: 294px;
+}
+
+#spotify-albumArt {
+  float: left;
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color:#b4b4b4;
+  margin-top: -5px;
+}
+
+.spotify-info-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 85px;
+  margin-top: -6px;
 }
 
 /* -- responsive styling [START] -- */
