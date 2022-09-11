@@ -92,6 +92,7 @@ h2 {
   margin-left: 10px; 
   color: #f6f6f6;
 }
+.profile-card-bottom a:hover {color: #c6c6c6;}
 
 .profile-card-discordrpc {
   float:left;

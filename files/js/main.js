@@ -36,7 +36,7 @@ function getDiscordShit() {
       }
 
       // removed in favor of using https://github.com/cnrad/lanyard-profile-readme
-      // if i decide i want it to be conistently themed, ill use this code so imma keep it just incase
+      // if i decide i want it to be consistently themed, ill use this code so imma keep it just incase
       // if (resp_json['data']['activities'].length > 0) {
       //   console.log('there is at least 1 activity')
       //   activity0 = resp_json['data']['activities'][0];
