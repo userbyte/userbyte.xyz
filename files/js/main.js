@@ -10,16 +10,29 @@ function getDiscordShit() {
         // console.log('userbyte is listening to spotify');
         // console.log('updating spotify lanyard');
         sp = resp_json['data']['spotify'];
+        document.getElementById("spotify-songLink").setAttribute('href', `https://open.spotify.com/track/${sp['track_id']}`);
         document.getElementById("spotify-albumArt").setAttribute('src', sp['album_art_url']);
         document.getElementById("spotify-artistName").textContent = sp['artist'];
         document.getElementById("spotify-songName").textContent = sp['song'];
         document.getElementById("spotify-albumName").textContent = sp['album'];
+        // set tooltip texts
+        document.getElementById("spotify-artistName").setAttribute('title', sp['artist']);
+        document.getElementById("spotify-songName").setAttribute('title', sp['song']);
+        document.getElementById("spotify-albumName").setAttribute('title', sp['album']);
       } else {
         // console.log('userbyte is not listening to spotify');
+        if (document.getElementById("spotify-songLink").hasAttribute('href')) {
+          // remove the song link if one is set
+          document.getElementById("spotify-songLink").removeAttribute('href');
+        }
         document.getElementById("spotify-albumArt").setAttribute('src', 'files/img/questionmark.png');
         document.getElementById("spotify-artistName").textContent = '---------';
         document.getElementById("spotify-songName").textContent = '(nothing)';
         document.getElementById("spotify-albumName").textContent = '---------';
+        // set tooltip texts
+        document.getElementById("spotify-artistName").setAttribute('title', '');
+        document.getElementById("spotify-songName").setAttribute('title', '');
+        document.getElementById("spotify-albumName").setAttribute('title', '');
       }
 
       // removed in favor of using https://github.com/cnrad/lanyard-profile-readme
