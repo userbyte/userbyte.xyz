@@ -11,11 +11,30 @@
 body {
   font-family: 'Source Code Pro';
   background-color: #262626; /* <-- fallback bg color */
-  background-image: url(../img/bg-1440p.png);
+  background: linear-gradient(0deg, #202020 0%, #404040 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 990px; /* attempt to match width of profile card */
+}
+footer p {
+  text-align: center;
+  line-height: 1ch;
+  color: #505050;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1 {
