@@ -36,6 +36,9 @@ footer p {
   -ms-user-select: none;
   user-select: none;
 }
+footer a {
+  color: #9c9c9c;
+}
 
 h1 {
   font-weight: bold;
