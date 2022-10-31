@@ -171,21 +171,6 @@ footer p:last-child {
   margin-left: 95px;
 }
 
-.spotify-progbar-outer {
-	border: 2px solid #1f5130 !important;
-  /* border: none; */
-  border-radius: 15px;
-  background-color: #1f3125;
-  margin-top: -5px;
-  margin-bottom: 12px;
-  height: 10px;
-}
-#spotify-progbar-bar {
-  height: inherit;
-	background-color: #23cd5e;
-  border-radius: 15px;
-}
-
 #ubterm {
   right: 2vw;
   top: 2vh;

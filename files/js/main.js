@@ -1,3 +1,5 @@
+sp = undefined;
+
 function getDiscordShit() {
   fetch('https://api.lanyard.rest/v1/users/143183268571774976', {method: 'GET'})
   .then(response => response)
@@ -10,6 +12,8 @@ function getDiscordShit() {
         // console.log('userbyte is listening to spotify');
         // console.log('updating spotify lanyard');
         sp = resp_json['data']['spotify'];
+        ct = (((new Date().getTime() - sp.timestamps.start) / (sp.timestamps.end - sp.timestamps.start)) * 100);
+        setSpotifyProgBar(ct);
         document.getElementById("spotify-songLink").setAttribute('href', `https://open.spotify.com/track/${sp['track_id']}`);
         document.getElementById("spotify-albumArt").setAttribute('src', sp['album_art_url']);
         document.getElementById("spotify-artistName").textContent = sp['artist'];
@@ -21,6 +25,7 @@ function getDiscordShit() {
         document.getElementById("spotify-albumName").setAttribute('title', sp['album']);
       } else {
         // console.log('userbyte is not listening to spotify');
+        sp = undefined;
         if (document.getElementById("spotify-songLink").hasAttribute('href')) {
           // remove the song link if one is set
           document.getElementById("spotify-songLink").removeAttribute('href');
@@ -59,7 +64,7 @@ function getDiscordShit() {
     }
   })
   .catch((e) => {
-    console.log(e)
+    console.log(e);
   });
 }
 
@@ -85,6 +90,26 @@ function updateShit() {
   setTimeout(updateShit, itv);
 }
 
+function setSpotifyProgBar(n) {
+  document.getElementById('spotify-progbar-bar').style.width = `${n}%`;
+}
+
+function updateSpotifySongProgress() {
+  // interval seconds (how often to update the shit)
+  seconds = 1;
+  itv = seconds * 1000;
+  if (sp != undefined) {
+    ct = (((new Date().getTime() - sp.timestamps.start) / (sp.timestamps.end - sp.timestamps.start)) * 100);
+    if (ct <= 100) {
+      setSpotifyProgBar(ct);
+    }
+  } else {
+    setSpotifyProgBar(0);
+  }
+  setTimeout(updateSpotifySongProgress, itv);
+}
+
 window.onload = function onLoaded() {
   updateShit();
+  updateSpotifySongProgress();
 }
