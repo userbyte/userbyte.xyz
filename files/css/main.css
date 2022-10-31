@@ -90,7 +90,7 @@ h2 {
   border-radius: 10px;
 }
 
-.profile-card-bottom {
+.profile-card-links {
   /* background: url(../img/bg-1440p.png) no-repeat center center fixed; */
   float:left;
   background-color: #262626;
@@ -103,18 +103,18 @@ h2 {
   max-width: 966px;
   font-size: 22px;
 }
-.profile-card-bottom i {
+.profile-card-links i {
   margin-left: 10px; 
   margin-top: 18px; 
   margin-bottom: 18px; 
   color: #bfbfbf;
 }
-.profile-card-bottom a {
+.profile-card-links a {
   /* float: right; */
   margin-left: 10px; 
   color: #f6f6f6;
 }
-.profile-card-bottom a:hover {color: #c6c6c6;}
+.profile-card-links a:hover {color: #c6c6c6;}
 
 .profile-card-discordrpc {
   float:left;
@@ -220,7 +220,7 @@ and (max-width: 1000px) {
     height: fit-content;
     padding: 9px;
   }
-  .profile-card-bottom {
+  .profile-card-links {
     width: 326px;
     padding: 9px;
   }
@@ -258,7 +258,7 @@ and (-webkit-device-pixel-ratio: 2) {
     height: fit-content;
     padding: 9px;
   }
-  .profile-card-bottom {
+  .profile-card-links {
     width: 326px;
     padding: 9px;
   }
@@ -295,7 +295,7 @@ and (-webkit-device-pixel-ratio: 3) {
     height: fit-content;
     padding: 9px;
   }
-  .profile-card-bottom {
+  .profile-card-links {
     width: 326px;
     padding: 9px;
   }
@@ -333,7 +333,7 @@ and (-webkit-device-pixel-ratio: 3) {
     height: fit-content;
     padding: 9px;
   }
-  .profile-card-bottom {
+  .profile-card-links {
     width: 326px;
     padding: 9px;
   }
@@ -371,7 +371,7 @@ and (-webkit-device-pixel-ratio: 3) {
     height: fit-content;
     padding: 9px;
   }
-  .profile-card-bottom {
+  .profile-card-links {
     width: 326px;
     padding: 9px;
   }
@@ -408,7 +408,7 @@ and (-webkit-device-pixel-ratio: 3) {
     height: fit-content;
     padding: 9px;
   }
-  .profile-card-bottom {
+  .profile-card-links {
     width: 326px;
     padding: 9px;
   }
@@ -445,7 +445,7 @@ and (-webkit-device-pixel-ratio: 3) {
     height: fit-content;
     padding: 9px;
   }
-  .profile-card-bottom {
+  .profile-card-links {
     width: 326px;
     padding: 9px;
   }
