@@ -109,6 +109,22 @@ function updateSpotifySongProgress() {
   setTimeout(updateSpotifySongProgress, itv);
 }
 
+var lastForcedShitUpdate = new Date().getTime();
+document.addEventListener('keypress', function(e) {
+  if (e.key === 'r') {
+    now = new Date().getTime();
+    // limit force updates to once every 5 seconds so you cant (easily) spam the apis
+    if (now > ( lastForcedShitUpdate + (5*1000) )) {
+      console.log('forceShitUpdate');
+      // reset thing
+      lastForcedShitUpdate = new Date().getTime();
+      // call update functions
+      getDiscordShit();
+      updateDiscordLanyardThing();
+    }
+  }
+});
+
 window.onload = function onLoaded() {
   updateShit();
   updateSpotifySongProgress();
