@@ -1,0 +1,84 @@
+@keyframes back-n-forth-in {
+  0% {
+    background-position-x: 990px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+@keyframes back-n-forth-out {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 990px;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: unset;
+  }
+  100% {
+    box-shadow: 0 0 15px #fff;
+  }
+}
+@keyframes glow-top-links {
+  0% {
+    box-shadow: unset;
+  }
+  100% {
+    box-shadow: 0 0 var(--card-drop-height) 5px #8e8e8e;
+  }
+}
+@keyframes glow-top-discord {
+  0% {
+    box-shadow: unset;
+  }
+  100% {
+    box-shadow: 0 0 var(--card-drop-height) 5px #5865f2;
+  }
+}
+@keyframes glow-top-spotify {
+  0% {
+    box-shadow: unset;
+    text-shadow: unset;
+  }
+  100% {
+    box-shadow: 0 0 var(--card-drop-height) 5px #23cd5e;
+    text-shadow:
+        0 0 7px #139545,
+        0 0 25px #23cd5e;
+  }
+}
+@keyframes glow-text {
+  /* 0% {
+    text-shadow: 0 0 2px #fff;
+  }
+  100% {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #162de0,
+        0 0 21px #2626f3,
+        0 0 42px #df25d2,
+        0 0 80px #ff32f8;
+  } */
+  0% {
+    text-shadow: 0 0 2px #fff;
+  }
+  100% {
+    text-shadow: 0 0 15px #fff;
+  }
+}
+
+@keyframes glow-discord {
+  0% {
+    text-shadow: 0 0 2px #fff;
+  }
+  100% {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #162de0,
+        0 0 100px  #5865F2 ;
+  }
+}

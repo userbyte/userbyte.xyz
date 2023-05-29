@@ -7,11 +7,21 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('anim.css');
+
+:root {
+  --ub-bg: #262626;
+  --ub-dark-gray: #404040;
+  --ub-light-gray: #808080;
+  --discord-blurple: #5865f2;
+  --spotify-green: #23cd5e;
+  --card-drop-height: 12px;
+}
 
 body {
   font-family: 'Source Code Pro';
-  background-color: #262626; /* <-- fallback bg color */
-  background: linear-gradient(0deg, #202020 0%, #404040 100%);
+  background-color: var(--ub-bg); /* <-- fallback bg color */
+  background: linear-gradient(0deg, #202020 0%, var(--ub-dark-gray) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -58,8 +68,9 @@ h2 {
 }
 
 .profile-card-top {
+  position: relative;
   /* background: transparent url("../img/banner-1280-384.png") repeat scroll center center; */
-  background-color: #404040; /* <-- fallback bg color */
+  background-color: var(--ub-dark-gray); /* <-- fallback bg color */
   background-size: cover;
   background-image: url(../img/banner-1280-384.png);
   width: 965px;
@@ -68,11 +79,55 @@ h2 {
   border-color: #b4b4b4;
   border-width: 1px;
   border-style: solid;
+  transition: background-position-x 6s;
+  transition-timing-function: ease;
+  background-position-x: 0px;
 }
 
 .profile-card-top p {
   color: white;
 }
+
+.profile-card-top:hover {
+  animation: glow .65s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: 5;
+}
+
+.main-content-container h1:hover, .main-content-container p:hover, .main-content-container a:hover {
+  animation: glow-text .85s;
+  /* animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse; */
+  animation-fill-mode: forwards;
+}
+
+.profile-card-links, .profile-card-discordrpc, .profile-card-spotify {
+  /* transition: margin-top .85s; */
+  position: relative;
+  /* clip-path: polygon(0% -20%, 100% -20%, 100% 100%, 0% 100%); */
+}
+
+.profile-card-links:hover, .profile-card-discordrpc:hover, .profile-card-spotify:hover {
+  animation-timing-function: ease-in-out;
+  /* margin-top: var(--card-drop-height); */
+  z-index: 5;
+}
+
+.profile-card-links:hover {
+  animation: glow-top-links .65s forwards;
+  border-color: #8e8e8e;
+}
+.profile-card-discordrpc:hover {
+  animation: glow-top-discord .65s forwards;
+  border-color: #5865f2;
+}
+.profile-card-spotify:hover {
+  animation: glow-top-spotify .65s forwards;
+  border-color: var(--spotify-green);
+}
+
 .profile-card-top-text {
   margin-left: 275px;
   font-size: 20px;
@@ -93,7 +148,7 @@ h2 {
 .profile-card-links {
   /* background: url(../img/bg-1440p.png) no-repeat center center fixed; */
   float:left;
-  background-color: #262626;
+  background-color: var(--ub-bg);
   border-color: #b4b4b4;
   border-width: 1px;
   border-style: solid;
@@ -118,7 +173,7 @@ h2 {
 
 .profile-card-discordrpc {
   float:left;
-  background-color: #262626;
+  background-color: var(--ub-bg);
   border-color: #b4b4b4;
   border-width: 1px;
   border-style: solid;
@@ -141,7 +196,7 @@ h2 {
 
 .profile-card-spotify {
   float: left;
-  background-color: #262626;
+  background-color: var(--ub-bg);
   border-color: #b4b4b4;
   border-width: 1px;
   border-style: solid;
@@ -154,6 +209,10 @@ h2 {
   font-size: 16px;
   color: white;
   max-width: 294px;
+}
+
+.profile-card-top:hover {
+  background-position-x: 990px;
 }
 
 #spotify-albumArt {
@@ -186,7 +245,7 @@ h2 {
 }
 #spotify-progbar-bar {
   height: inherit;
-	background-color: #23cd5e;
+	background-color: var(--spotify-green);
   border-radius: 15px;
 }
 
