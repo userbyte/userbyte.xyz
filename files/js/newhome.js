@@ -68,17 +68,23 @@ function getDiscordShit() {
   });
 }
 
-function refreshImage(imgElement, imgURL){    
-  // create a new timestamp 
-  var timestamp = new Date().getTime();  
-  var el = document.getElementById(imgElement);  
-  var queryString = "?t=" + timestamp;    
-  el.src = imgURL + queryString;    
+function refreshImage(imgElement, imgURL) {
+  // create a new timestamp
+  var timestamp = new Date().getTime();
+  var el = document.getElementById(imgElement);
+  var queryString = "&t=" + timestamp;
+  el.src = imgURL + queryString;
 }
 
 function updateDiscordLanyardThing() {
   // console.log('updating discord lanyard');
-  refreshImage('lanyard-discord', 'https://lanyard.cnrad.dev/api/143183268571774976');
+  discordProfileCard_theme = 'dark';
+  discordProfileCard_bgColor = '151515';
+  discordProfileCard_animatedPfp = 'false'; // if discord pfp is animated, set this to true
+  discordProfileCard_hideDiscrim = 'true';
+  discordProfileCard_borderRadius = '0px';
+  discordProfileCard_idleMsg = encodeURI('prolly touching grass or sum, idk'); // what should it say when i have no activity showing on discord
+  refreshImage('lanyard-discord', `https://lanyard.cnrad.dev/api/143183268571774976?theme=${discordProfileCard_theme}&bg=${discordProfileCard_bgColor}&animated=${discordProfileCard_animatedPfp}&hideDiscrim=${discordProfileCard_hideDiscrim}&borderRadius=${discordProfileCard_borderRadius}&idleMessage=${discordProfileCard_idleMsg}`);
 }
 
 function updateShit() {
