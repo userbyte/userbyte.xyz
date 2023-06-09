@@ -37,6 +37,9 @@
   }
   100% {
     box-shadow: 0 0 var(--card-drop-height) 5px #5865f2;
+    text-shadow:
+        0 0 7px #4c5192,
+        0 0 25px #5865f2;
   }
 }
 @keyframes glow-top-spotify {
