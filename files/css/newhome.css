@@ -174,7 +174,7 @@ footer p:last-child {
 #ubterm {
   right: 2vw;
   top: 2vh;
-  width: 495px;
+  width: fit-content;
   font-family: monospace;
   font-size: 18px;
   /* background-color: #151515; */
