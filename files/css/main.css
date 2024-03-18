@@ -46,8 +46,29 @@ footer p {
   -ms-user-select: none;
   user-select: none;
 }
+
 footer a {
   color: #9c9c9c;
+}
+
+.footer-icon-div {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+.footer-icon-div p {
+  font-size: 40px;
+  display: inline;
+}
+.footer-icon-div a:hover {
+  border-radius: 8px;
+  animation: glow .85s;
+  animation-fill-mode: forwards;
+}
+
+footer hr {
+  width: 220px;
 }
 
 h1 {
