@@ -6,8 +6,9 @@ html {
 body {
   /* unsplash not support this anymore :( */
   /* background-image: url('https://source.unsplash.com/1920x1080/?mountains'); */
-  
-  background-image: url('../img/newhome_bg.jpg');
+  background-image: image-set(
+    url("../img/newhome_bg.webp") type("image/webp"),
+    url("../img/newhome_bg.jpg") type("image/jpeg"));
   /* background: unset; */
 }
 .blurbg {
