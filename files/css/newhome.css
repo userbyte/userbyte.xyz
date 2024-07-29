@@ -147,6 +147,9 @@ footer p:last-child {
 }
 .links-content a:hover {color: #c6c6c6;}
 
+#titlebar-discordpresence {
+  height: 35px;
+}
 
 #discordpresence {
   top: 42vh;
