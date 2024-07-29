@@ -1,5 +1,7 @@
 body {
-  background-image: url('https://source.unsplash.com/1920x1080/?mountains');
+  /* unsplash not support this anymore :( */
+  /* background-image: url('https://source.unsplash.com/1920x1080/?mountains'); */
+  background-image: url('../img/newhome_bg.jpg');
 }
 .blurbg {
   position: absolute;
@@ -74,7 +76,7 @@ footer {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 495px;
+  width: fit-content;
   border-radius: 10px 10px 0 0; /* match titlebar radius */
   transform: translateX(-50%) translateY(-50%);
   font-family: monospace;

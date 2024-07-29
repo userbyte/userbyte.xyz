@@ -4,7 +4,10 @@ html {
   overflow-y: hidden;
 }
 body {
-  background-image: url('https://source.unsplash.com/1920x1080/?mountains');
+  /* unsplash not support this anymore :( */
+  /* background-image: url('https://source.unsplash.com/1920x1080/?mountains'); */
+  
+  background-image: url('../img/newhome_bg.jpg');
   /* background: unset; */
 }
 .blurbg {
