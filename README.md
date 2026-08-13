@@ -1,3 +1,3 @@
 # userbyte.xyz
 
-a remake of the userbyte.xyz homepage *without* using a website creation thing (fuck u lol i was lazy okay...)
+the home of all things userbyte. well... not really all things but you get the idea.
