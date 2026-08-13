@@ -4,3 +4,5 @@ release.tar
 pftest
 files/css/main.css.bak1
 files/css/main.css.bak2
+ship-it.sh
+ship-exclude-list.txt
