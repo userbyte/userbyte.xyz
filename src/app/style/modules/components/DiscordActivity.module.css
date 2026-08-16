@@ -92,7 +92,10 @@
   height: 1.4em;
   margin-left: -1.4em;
   margin-top: 2.6em;
-  border-radius: 12px;
+  border-left: 2px solid var(--layer-2);
+  border-top: 2px solid var(--layer-2);
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 /* responsive shit */
