@@ -46,15 +46,11 @@ export default function DiscordActivity({
       name: latestActivity.name ? latestActivity.name : "...",
       state: latestActivity.state ? latestActivity.state : "...",
       details: latestActivity.details ? latestActivity.details : "...",
-      largeImage: imgs.assetLargeImage
-        ? imgs.assetLargeImage
-        : "/img/png/unknown.png",
+      largeImage: imgs.assetLargeImage ? imgs.assetLargeImage : undefined,
       largeText: latestActivity.assets
         ? latestActivity.assets.large_text
         : undefined,
-      smallImage: imgs.assetSmallImage
-        ? imgs.assetSmallImage
-        : "/img/png/unknown.png",
+      smallImage: imgs.assetSmallImage ? imgs.assetSmallImage : undefined,
       smallText: latestActivity.assets
         ? latestActivity.assets.small_text
         : undefined,
@@ -85,20 +81,28 @@ export default function DiscordActivity({
       {activityMapped ? (
         <span className="activity_details">
           <section>
-            <picture>
-              <img
-                className="activity_lg_img"
-                srcSet={activityMapped.largeImage}
-                title={activityMapped.smallText}
-              />
-            </picture>
-            <picture>
-              <img
-                className="activity_sm_img"
-                srcSet={activityMapped.smallImage}
-                title={activityMapped.smallText}
-              />
-            </picture>
+            {activityMapped.largeImage ? (
+              <picture>
+                <img
+                  className="activity_lg_img"
+                  srcSet={activityMapped.largeImage}
+                  title={activityMapped.largeText}
+                />
+              </picture>
+            ) : (
+              <></>
+            )}
+            {activityMapped.smallImage ? (
+              <picture>
+                <img
+                  className="activity_sm_img"
+                  srcSet={activityMapped.smallImage}
+                  title={activityMapped.smallText}
+                />
+              </picture>
+            ) : (
+              <></>
+            )}
           </section>
           <div>
             <p title={activityMapped.state}>{activityMapped.state}</p>
