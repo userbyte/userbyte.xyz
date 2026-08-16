@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 15%;
+  background-color: var(--layer-1);
+  border-top: 1px solid var(--layer-1-border);
+}
+
+.main svg {
+  width: 3em;
+  aspect-ratio: 1/1;
+}
+
+.main a {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.main a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* responsive shit */
+@media only screen and (max-width: 880px) {
+  .main {
+    padding: 0 5%;
+  }
+  .main a {
+    font-size: 4vw;
+  }
+}

@@ -1,0 +1,84 @@
+:root {
+  --background: #151515;
+  --foreground: #e8e8e8;
+  --layer-1: #1c1c1c;
+  --layer-1-border: #404040;
+  --layer-2: #111111;
+  --layer-2-border: #404040;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 5% 10%;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-bitcount);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p,
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  /* disable selecting images, its ugly and pointless */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+input,
+textarea,
+select {
+  padding: 0.22em;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #3e3e3e;
+  font-size: 0.8em;
+  font-family: inherit;
+  outline: none;
+}
+
+noscript {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  font-family: monospace;
+  gap: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d2d2d6d;
+  backdrop-filter: blur(4px);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+noscript a {
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

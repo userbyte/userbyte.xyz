@@ -1,0 +1,51 @@
+.main {
+  display: flex;
+  gap: 0.2em;
+  flex-direction: column;
+  font-size: 1.1em;
+  text-align: left;
+  width: 20em;
+  height: 8.4em;
+  background-color: var(--layer-2);
+  border: 1px solid var(--layer-2-border);
+  padding: 0.3em;
+}
+
+.main span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3em;
+  width: 100%;
+  border-bottom: 1px solid var(--layer-2-border);
+  padding-bottom: 0.15em;
+}
+
+.main span[class="title"] {
+  color: #1ed760;
+}
+
+.main img[class="album_art"] {
+  width: 5em;
+  height: 5em;
+}
+
+.main div[class="progress_bar_outer"] {
+  background-color: #232323;
+  height: 0.3em;
+  width: 100%;
+}
+
+.main div[class="progress_bar_inner"] {
+  background-color: #1ed760;
+  width: 0%;
+  height: inherit;
+}
+
+/* responsive shit */
+@media only screen and (max-width: 760px) {
+  .main {
+    font-size: 0.9em;
+    width: 100%;
+  }
+}

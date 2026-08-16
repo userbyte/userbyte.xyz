@@ -1,0 +1,17 @@
+.main {
+  font-size: 1.4em;
+  text-align: left;
+}
+
+.main [class="pfp"] {
+  width: 5em;
+  height: 5em;
+  border: 2px solid var(--layer-1-border);
+}
+
+/* responsive shit */
+@media only screen and (max-width: 760px) {
+  .main {
+    font-size: 1em;
+  }
+}

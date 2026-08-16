@@ -1,0 +1,127 @@
+.main {
+  /* position: absolute; */
+  display: flex;
+  /* top: 10em; */
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.main div[class="inner"] {
+  border: 1px solid var(--layer-1-border);
+  background-color: var(--layer-1);
+  width: 100%;
+  text-align: center;
+}
+
+.main div[class="header_text"] span {
+  font-size: 3rem;
+  letter-spacing: 0.4em;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  animation: blinky 1s linear, flicker 3s step-end infinite;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 12px #ffffff;
+  /* border-bottom: 1px solid white; */
+}
+
+.main div[class="header_text"] span {
+  display: inline-block;
+}
+
+@keyframes blinky {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 12px #ffffff;
+  }
+  25% {
+    text-shadow: -6px 0 5px #ffffff, 0 -6px 10px #ffffff, 0 6px 12px #ffffff;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    text-shadow: 6px 0 5px #ffffff, 0 6px 10px #ffffff, 0 -6px 12px #ffffff;
+    opacity: 1;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 12px #ffffff;
+    opacity: 0.3;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0.5;
+  }
+  2% {
+    opacity: 0.7;
+  }
+  3% {
+    opacity: 0.4;
+  }
+  4% {
+    opacity: 1;
+  }
+}
+
+.main div[class="header_text"] span:nth-child(1) {
+  animation-delay: 0s, 1s;
+}
+
+.main div[class="header_text"] span:nth-child(2) {
+  animation-delay: 0.18s, 1.18s;
+}
+
+.main div[class="header_text"] span:nth-child(3) {
+  animation-delay: 0.1s, 1.1s;
+}
+
+.main div[class="header_text"] span:nth-child(4) {
+  animation-delay: 0.5s, 1.5s;
+}
+
+.main div[class="header_text"] span:nth-child(5) {
+  animation-delay: 0.2s, 1.2s;
+}
+
+.main div[class="header_text"] span:nth-child(6) {
+  animation-delay: 0.35s, 1.35s;
+}
+
+.main div[class="header_text"] span:nth-child(7) {
+  animation-delay: 0.6s, 1.6s;
+}
+
+.main div[class="header_text"] span:nth-child(8) {
+  animation-delay: 0.7s, 1.7s;
+}
+
+.main div[class="header_text"] span:nth-child(9) {
+  animation-delay: 0.8s, 1.8s;
+}
+
+.main div[class="header_text"] span:nth-child(10) {
+  animation-delay: 0.68s, 1.68s;
+}
+
+.main div[class="header_text"] span:nth-child(11) {
+  animation-delay: 0.43s, 1.43s;
+}
+
+.main div[class="header_text"] span:nth-child(12) {
+  animation-delay: 0.56s, 1.56s;
+}
+
+/* responsive shit */
+@media only screen and (max-width: 880px) {
+  .main div[class="header_text"] span {
+    font-size: 5vw;
+  }
+}

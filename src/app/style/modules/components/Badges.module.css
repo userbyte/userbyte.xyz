@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.25em;
+  width: 100%;
+  padding: 1em;
+  border: 1px solid var(--layer-1-border);
+  background-color: var(--layer-1);
+}
+
+.main a {
+  width: 88px;
+  height: 31px;
+}
