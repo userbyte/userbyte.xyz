@@ -12,7 +12,7 @@ export default function NavBar() {
         <Link href="/blog">[ blog ]</Link>
       </div>
       <div className="nav_button" data-specialstyle="about">
-        <Link href="/guestbook">[ guestbook ]</Link>
+        <Link href="https://userbyte.atabook.org">[ guestbook ]</Link>
       </div>
     </div>
   );
