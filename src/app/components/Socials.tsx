@@ -23,31 +23,31 @@ export default function Socials() {
   return (
     <div className={styles.main}>
       <h3>socials:</h3>
-      <a href={socialLinks.github}>
+      <a href={socialLinks.github} target="_blank">
         <span>
           <FontAwesomeIcon icon={faGithub} />
           <p>userbyte</p>
         </span>
       </a>
-      <a href={socialLinks.steam}>
+      <a href={socialLinks.steam} target="_blank">
         <span>
           <FontAwesomeIcon icon={faSteam} />
           <p>userbyte</p>
         </span>
       </a>
-      <a href={socialLinks.twitter}>
+      <a href={socialLinks.twitter} target="_blank">
         <span>
           <FontAwesomeIcon icon={faXTwitter} />
           <p>userbyte</p>
         </span>
       </a>
-      <a href={socialLinks.youtube}>
+      <a href={socialLinks.youtube} target="_blank">
         <span>
           <FontAwesomeIcon icon={faYoutube} />
           <p>userbyte</p>
         </span>
       </a>
-      <a href={socialLinks.discord}>
+      <a href={socialLinks.discord} target="_blank">
         <span>
           <FontAwesomeIcon icon={faDiscord} />
           <p>userbyte</p>
