@@ -27,6 +27,11 @@
   gap: 0.3em;
 }
 
+.main span[class="title"] svg {
+  width: 1.1em;
+  height: 1.1em;
+}
+
 .main span[class="activity_details"] {
   gap: 0.5em;
 }

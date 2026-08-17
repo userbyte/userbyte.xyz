@@ -25,6 +25,11 @@
   color: #1ed760;
 }
 
+.main span[class="title"] svg {
+  width: 1.1em;
+  height: 1.1em;
+}
+
 .main img[class="album_art"] {
   width: 5em;
   height: 5em;
