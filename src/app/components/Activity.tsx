@@ -1,10 +1,13 @@
 "use client";
 
-import { Types, useLanyard } from "use-lanyard";
+import { get, Types, useLanyard } from "use-lanyard";
 import DiscordActivity from "./DiscordActivity";
 import SpotifyActivity from "./SpotifyActivity";
 
 export const DISCORD_USER_ID = "143183268571774976";
+
+// for SSR before the websocket connects
+const initialPresence = await get(DISCORD_USER_ID);
 
 // ripped from https://github.com/cnrad/lanyard-profile-readme and modified for my usecase
 // shoutout cnrad
@@ -118,7 +121,9 @@ export function fetchUserImages(data: Types.Presence | "loading") {
 
 export default function Activity() {
   try {
-    const presence = useLanyard(DISCORD_USER_ID, {});
+    const presence = useLanyard(DISCORD_USER_ID, {
+      initialData: initialPresence,
+    });
 
     if (presence) {
       return (
