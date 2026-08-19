@@ -44,8 +44,8 @@ export const metadata: Metadata = {
   keywords: ["userbyte", "userbyte.xyz", "developer", "personal"],
   manifest: "/pwa/manifest.json",
   icons: {
-    icon: "/img/png/userbyte.png",
-    shortcut: "/img/png/userbyte.png",
+    icon: "/img/svg/userbyte.svg",
+    shortcut: "/img/svg/userbyte.svg",
     apple: "/img/png/userbyte.png",
     other: {
       rel: "apple-touch-icon-precomposed",
