@@ -1,4 +1,3 @@
-import Socials from "./Socials";
 import styles from "@/app/style/modules/components/AboutMe.module.css";
 
 export default function AboutMe() {
