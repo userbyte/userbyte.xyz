@@ -82,3 +82,10 @@ noscript a {
     color-scheme: dark;
   }
 }
+
+/* responsive shit */
+@media only screen and (max-width: 760px) {
+  body {
+    padding: 10% 2%;
+  }
+}
