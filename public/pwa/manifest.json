@@ -9,8 +9,8 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "../img/userbyte.png",
-      "sizes": "512x512",
+      "src": "../img/png/userbyte.png",
+      "sizes": "2500x2500",
       "type": "image/png",
       "density": "1.0"
     }
