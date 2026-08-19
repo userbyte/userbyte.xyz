@@ -13,6 +13,11 @@
       "sizes": "2500x2500",
       "type": "image/png",
       "density": "1.0"
+    },
+    {
+      "src": "../img/svg/userbyte.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ]
 }
