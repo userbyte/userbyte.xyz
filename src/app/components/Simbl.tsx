@@ -24,7 +24,10 @@ export default function Simbl() {
               </picture>
               <p>latest simbl post</p>
             </span>
-            <a href={`https://simbl.userbyte.xyz/post/${latestSimblPost.id}`}>
+            <a
+              href={`https://simbl.userbyte.xyz/post/${latestSimblPost.id}`}
+              target="_blank"
+            >
               <p className="post_text" title={latestSimblPost.text}>
                 {latestSimblPost.text}
               </p>
