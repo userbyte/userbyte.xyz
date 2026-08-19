@@ -35,7 +35,13 @@
 .main span[class="activity_details"] {
   gap: 0.5em;
 }
+
 .main span[class="activity_details"] div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+
   inline-size: 22ch;
   overflow-wrap: break-word;
 }
@@ -45,6 +51,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.main span[class="activity_details"] p:nth-child(1) {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .main p[class="display_name"] {
