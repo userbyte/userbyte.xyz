@@ -2,7 +2,7 @@ import { Types } from "use-lanyard";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socialLinks } from "./Socials";
-import { DISCORD_USER_ID, fetchUserImages } from "./Activity";
+import { DISCORD_USER_ID, fetchUserImages } from "./LanyardWrapper";
 import styles from "@/app/style/modules/components/DiscordActivity.module.css";
 
 export default function DiscordActivity({
@@ -41,7 +41,7 @@ export default function DiscordActivity({
   const latestActivity = presence.activities[presence.activities.length - 1];
 
   var activityMapped;
-  if (latestActivity) {
+  if (latestActivity && latestActivity.name != "Spotify") {
     activityMapped = {
       name: latestActivity.name ? latestActivity.name : "...",
       state: latestActivity.state ? latestActivity.state : "...",
@@ -105,6 +105,7 @@ export default function DiscordActivity({
             )}
           </section>
           <div>
+            <p title={activityMapped.name}>{activityMapped.name}</p>
             <p title={activityMapped.state}>{activityMapped.state}</p>
             <p title={activityMapped.details}>{activityMapped.details}</p>
           </div>

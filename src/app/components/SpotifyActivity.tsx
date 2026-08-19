@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Types } from "use-lanyard";
-import { fetchUserImages } from "./Activity";
+import { fetchUserImages } from "./LanyardWrapper";
 import styles from "@/app/style/modules/components/SpotifyActivity.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
