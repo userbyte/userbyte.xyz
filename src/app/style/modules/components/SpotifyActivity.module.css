@@ -63,6 +63,16 @@
   height: inherit;
 }
 
+.main div[class="nothing_playing"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-style: italic;
+  color: #404040;
+}
+
 /* responsive shit */
 @media only screen and (max-width: 760px) {
   .main {

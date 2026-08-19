@@ -117,7 +117,9 @@ export default function SpotifyActivity({
           </div>
         </>
       ) : (
-        <p>not listening to anything</p>
+        <div className="nothing_playing">
+          <p>not listening to anything</p>
+        </div>
       )}
     </div>
   );
