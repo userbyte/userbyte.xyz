@@ -35,6 +35,22 @@
   height: 5em;
 }
 
+.main div[class="song_details"] {
+  inline-size: 20ch;
+  overflow-wrap: break-word;
+}
+
+.main div[class="song_details"] p {
+  max-height: 2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main div[class="song_details"] p:nth-child(1) {
+  font-weight: bold;
+}
+
 .main div[class="progress_bar_outer"] {
   background-color: #232323;
   height: 0.3em;

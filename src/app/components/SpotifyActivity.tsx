@@ -97,10 +97,16 @@ export default function SpotifyActivity({
                 />
               </picture>
             </a>
-            <div>
-              <p>{musicActivityMapped.artist}</p>
-              <p>{musicActivityMapped.title}</p>
-              <p>{musicActivityMapped.album}</p>
+            <div className="song_details">
+              <p title={musicActivityMapped.title}>
+                {musicActivityMapped.title}
+              </p>
+              <p title={musicActivityMapped.artist}>
+                {musicActivityMapped.artist}
+              </p>
+              <p title={musicActivityMapped.album}>
+                {musicActivityMapped.album}
+              </p>
             </div>
           </span>
           <div className="progress_bar_outer">
