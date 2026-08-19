@@ -6,7 +6,7 @@ import Socials from "./components/Socials";
 import styles from "@/app/style/modules/pages/Home.module.css";
 
 export const metadata: Metadata = {
-  title: "userbyte.xyz",
+  title: "homepage - userbyte.xyz",
   description: "home of all things userbyte",
 };
 
