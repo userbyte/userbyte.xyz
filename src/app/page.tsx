@@ -16,8 +16,8 @@ export default function Homepage() {
       <div className="container">
         <AboutMe />
         <Activity />
-        <Socials />
       </div>
+      <Socials />
       <Badges />
     </div>
   );
