@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.main a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2em;
+  font-size: 0.8em;
+  width: fit-content;
+  font-family: var(--font-source-code-pro);
+  background-color: var(--layer-2);
+  border: 1px solid var(--layer-2-border);
+  padding: 0.15em;
+}
+
+.main a:hover {
+  color: white;
+  border-color: #808080;
+}
+
+.main code {
+  display: block;
+  width: fit-content;
+  font-family: monospace;
+  color: #bababa;
+  /* background-color: var(--layer-2);
+  border: 1px solid var(--layer-2-border);
+  padding: 0.2em; */
+}
+
+.main svg {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+/* responsive shit */
+@media only screen and (max-width: 760px) {
+  .main {
+    font-size: 1em;
+  }
+}

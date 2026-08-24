@@ -9,6 +9,9 @@ export default function NavBar() {
       </div>
 
       <div className="nav_button" data-specialstyle="about">
+        <Link href="/contact">[ contact ]</Link>
+      </div>
+      <div className="nav_button" data-specialstyle="about">
         <Link href="/blog">[ blog ]</Link>
       </div>
       <div className="nav_button" data-specialstyle="about">
