@@ -1,6 +1,8 @@
 .main {
   display: flex;
+  padding-top: 2em;
+  width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
