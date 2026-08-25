@@ -7,7 +7,6 @@ export default function NavBar() {
       <div className="nav_button" data-specialstyle="home">
         <Link href="/">[ home ]</Link>
       </div>
-
       <div className="nav_button" data-specialstyle="about">
         <Link href="/contact">[ contact ]</Link>
       </div>
