@@ -13,4 +13,8 @@
 .main a {
   width: 88px;
   height: 31px;
+  font-size: 0.8em;
+  white-space: initial;
+  word-wrap: break-word;
+  overflow-y: hidden;
 }
