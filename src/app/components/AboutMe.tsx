@@ -1,3 +1,4 @@
+import Skills from "./Skills";
 import styles from "@/app/style/modules/components/AboutMe.module.css";
 
 export default function AboutMe() {
@@ -16,6 +17,7 @@ export default function AboutMe() {
         im a shitty programmer with boring projects. not much to see here tbh.
         "UsErByTe" lol nerd ass 🤓
       </p>
+      <Skills />
     </div>
   );
 }
