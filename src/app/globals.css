@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  padding: 5% 10%;
+  padding: 2.5% 10%;
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-bitcount);
