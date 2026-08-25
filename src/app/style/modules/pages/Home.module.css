@@ -25,7 +25,7 @@
 }
 
 /* responsive shit */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1024px) {
   .main div[class="container"] {
     display: flex;
     flex-direction: column;

@@ -74,9 +74,14 @@
 }
 
 /* responsive shit */
+@media only screen and (max-width: 1024px) {
+  .main {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   .main {
     font-size: 0.9em;
-    width: 100%;
   }
 }
