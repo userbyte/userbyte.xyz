@@ -1,4 +1,5 @@
 import Skills from "./Skills";
+import GitHubRepos from "./GitHubRepos";
 import styles from "@/app/style/modules/components/AboutMe.module.css";
 
 export default function AboutMe() {
@@ -18,6 +19,7 @@ export default function AboutMe() {
         "UsErByTe" lol nerd ass 🤓
       </p>
       <Skills />
+      <GitHubRepos />
     </div>
   );
 }
