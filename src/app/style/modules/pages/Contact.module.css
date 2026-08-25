@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2em;
+  padding-top: 2em;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main div[class="container"] {
+  padding: 2em;
+  width: 100%;
+  border: 1px solid var(--layer-1-border);
+  background-color: var(--layer-1);
+}
+
+/* responsive shit */
+@media only screen and (max-width: 760px) {
+  .main div[class="container"] {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,69 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  border: 1px solid var(--layer-1-border);
+  width: 20em;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.main span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main hr {
+  width: 100%;
+}
+
+.main div[class="repo_list"] {
+  background-color: black;
+  width: 100%;
+}
+
+.main div[class="repo_list"] div[class="repo_item"] {
+  position: relative;
+  padding: 0.2em;
+  width: 100%;
+  background-color: var(--layer-2);
+  border-bottom: 1px solid var(--layer-1-border);
+}
+
+.main div[class="repo_list"] div[class="repo_item"]:hover {
+  background-color: #ffffff22;
+  border-bottom: 1px solid white;
+  font-weight: 600;
+}
+
+.main div[class="repo_list"] div[class="repo_item"] p[class="repo_lang"] {
+  position: absolute;
+  right: 0.32em;
+  bottom: 0.25em;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.main div[class="repo_list"] div[class="repo_item"] p[class="repo_name"] {
+  max-width: 20ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main
+  div[class="repo_list"]
+  div[class="repo_item"]
+  p[class="repo_stargazers"]
+  svg {
+  color: #ddb000;
+}
+
+/* responsive shit */
+@media only screen and (max-width: 1024px) {
+  .main {
+    width: 100%;
+  }
+}

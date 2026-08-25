@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  gap: 1rem;
+  padding-top: 2em;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main div[class="container"] {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1.9fr 0.1fr;
+  grid-template-rows: 1.9fr 0.1fr;
+  gap: 1em 0.2em;
+  grid-template-areas:
+    ". ."
+    ". .";
+  padding: 1em;
+  width: 100%;
+  border: 1px solid var(--layer-1-border);
+  background-color: var(--layer-1);
+}
+
+/* responsive shit */
+@media only screen and (max-width: 1024px) {
+  .main div[class="container"] {
+    display: flex;
+    flex-direction: column;
+  }
+}

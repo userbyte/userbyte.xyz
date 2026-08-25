@@ -1,0 +1,23 @@
+{
+  "short_name": "userbyte.xyz",
+  "name": "userbyte.xyz",
+  "start_url": "/",
+  "background_color": "#262626",
+  "theme_color": "#404040",
+  "description": "home of all things userbyte",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "../img/png/userbyte.png",
+      "sizes": "2500x2500",
+      "type": "image/png",
+      "density": "1.0"
+    },
+    {
+      "src": "../img/svg/userbyte.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

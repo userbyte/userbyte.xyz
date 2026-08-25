@@ -1,0 +1,53 @@
+.main {
+  width: auto;
+}
+.main div[class="lang_list"] {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.main div[class="lang_item"] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  font-size: 1em;
+  padding: 0.2em;
+  background-color: var(--layer-2);
+  width: fit-content;
+  border: 1px solid var(--layer-2-border);
+}
+.main div[class="lang_item"]:hover {
+  cursor: default;
+  background-color: #ffffff0d;
+}
+
+.main div[class="lang_item"][data-lang="golang"] {
+  border-color: #6ad7e5;
+}
+.main div[class="lang_item"][data-lang="golang"] svg {
+  color: #6ad7e5;
+}
+
+.main div[class="lang_item"][data-lang="javascript"] {
+  border-color: #f8dc3e;
+}
+.main div[class="lang_item"][data-lang="javascript"] svg {
+  color: #f8dc3e;
+}
+
+.main div[class="lang_item"][data-lang="typescript"] {
+  border-color: #3077c5;
+}
+.main div[class="lang_item"][data-lang="typescript"] svg {
+  color: #3077c5;
+}
+
+.main div[class="lang_item"][data-lang="python"] {
+  border-color: #34709f;
+}
+.main div[class="lang_item"][data-lang="python"] svg {
+  color: #34709f;
+}
