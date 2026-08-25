@@ -54,7 +54,17 @@ export const metadata: Metadata = {
   },
   openGraph: {
     siteName: "userbyte.xyz",
-    images: "/img/png/userbyte.png",
+    images: [
+      {
+        url: "/img/png/userbyte.png",
+        width: 175,
+        height: 175,
+      },
+    ],
+  },
+  twitter: {
+    // image too big on discord embed, so we unset
+    images: [],
   },
 };
 
