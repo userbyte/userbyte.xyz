@@ -9,6 +9,7 @@ import package_json from "./package.json";
 module.exports = {
   allowedDevOrigins: ["127.0.0.1"],
   output: "export",
+  trailingSlash: true,
   env: {
     // for client usage
     NEXT_PUBLIC_APP_VERSION: package_json.version,
