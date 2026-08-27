@@ -16,7 +16,6 @@ export async function getRepos(username: string): Promise<{
 }> {
   // send request
   let res: Response | null;
-  console.log(GITHUB_API_URL + "users/" + username + "/repos");
   try {
     res = await fetch(GITHUB_API_URL + "users/" + username + "/repos", {
       method: "GET",
