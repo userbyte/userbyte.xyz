@@ -4,7 +4,7 @@ const badgeList: Array<{ link: string; desc: string; imgURL: string }> = [
   {
     link: "https://userbyte.xyz/",
     desc: "userbyte.xyz",
-    imgURL: "/img/webp/88x31.webp",
+    imgURL: "/img/88x31/userbyte.webp",
   },
   {
     link: "https://electron271.gay/",
