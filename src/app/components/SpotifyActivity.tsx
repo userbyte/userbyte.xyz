@@ -55,7 +55,9 @@ export default function SpotifyActivity({
               (musicActivityMapped.timestamps.end -
                 musicActivityMapped.timestamps.start)) *
             100;
-          setSongProgress(ct);
+
+          // set song process (terniary here caps the value to 100)
+          setSongProgress(ct > 100 ? 100 : ct);
         }
       }, 250);
 

@@ -60,6 +60,7 @@
 .main div[class="progress_bar_inner"] {
   background-color: #1ed760;
   width: 0%;
+  max-width: 100%;
   height: inherit;
 }
 
